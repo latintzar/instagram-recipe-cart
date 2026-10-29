@@ -10,6 +10,7 @@ This is the original Vitrina workflow, adapted for an operator's own accounts an
 
 ![Instagram reel to recipe and local grocery basket, illustrated with Vitrina original drawings](docs/assets/readme-hero.png)
 
+[Illustration credit](docs/assets/illustration-credit.md)
 
 ## How it works
 
@@ -57,3 +58,5 @@ Only Instagram reel URLs and Meta's exact messaging-CDN host are accepted. The d
 `pytest -q` exercises signed webhooks, deduplication, URL checks, original pack sizing, cross-shop validation, the grocery REST contract, checkout origin checks and a mocked end-to-end worker. Test accounts, shops and recipes are fictional. The suite makes no provider calls. Real Meta delivery, vision extraction, grocery writes and checkout have not been exercised for this release.
 
 See [architecture](docs/architecture.md), [configuration](docs/configuration.md), [grocery contract](docs/grocery-contract.md), [provenance](PROVENANCE.md) and the [agent setup skill](skills/instagram-recipe-cart/SKILL.md). Original code is [MIT licensed](LICENSE); dependencies retain their own terms.
+
+[made by atelier neyra](https://atelierneyra.com)
