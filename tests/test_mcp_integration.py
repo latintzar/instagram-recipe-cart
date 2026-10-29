@@ -31,7 +31,7 @@ def test_real_sdk_calls_synthetic_checkout_tool():
                 with socket.create_connection(("127.0.0.1",port),timeout=0.1): break
             except OSError: time.sleep(0.1)
         else: pytest.fail("local synthetic MCP server did not start")
-        url = asyncio.run(create_checkout_link(f"http://127.0.0.1:{port}/mcp/", "synthetic",
+        url = asyncio.run(create_checkout_link(f"http://127.0.0.1:{port}/mcp", "synthetic",
                          "https://grocery.example", ["synthetic-cart"],"synthetic-key","synthetic-thread"))
         assert url == "https://grocery.example/checkout?s=synthetic"
     finally:
