@@ -6,6 +6,10 @@ The service receives a shared reel in an Instagram DM, extracts the recipe from 
 
 This is the original Vitrina workflow, adapted for an operator's own accounts and a Vitrina-compatible grocery backend. Vitrina's original implementation used its own Sofia shop catalog, UCP carts and click-and-collect checkout. The grocery adapter implements Vitrina’s own service contract. The sibling [Social Recipes Kit](https://github.com/latintzar/social-recipes-kit) contains the reusable video extractor and player; this project connects the Instagram-to-cart flow.
 
+![Instagram reel to recipe and local grocery basket, illustrated with Vitrina original drawings](docs/assets/readme-hero.png)
+
+[Illustration credit](docs/assets/illustration-credit.md)
+
 ## How it works
 
 1. Meta signs a webhook when someone shares a reel to your professional Instagram account. The service verifies the signature and queues each message once.
